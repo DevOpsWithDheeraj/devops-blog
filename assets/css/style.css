@@ -77,23 +77,28 @@ header {
     border-bottom: 2px solid #00ffff !important;
 }
 
+/* Header text container with theme-friendly background */
 .header-content {
-    background: rgba(0, 255, 255, 0.15) !important; /* subtle cyan tint */
-    padding: 20px 40px !important;
+    background: rgba(40, 40, 40, 0.7) !important; /* dark graphite tint for better readability */
+    padding: 25px 50px !important;
     border-radius: 12px !important;
     z-index: 2 !important;
     text-align: center !important;
+    font-family: 'Montserrat', sans-serif !important; /* modern professional font */
 }
 
+/* Header Title */
 header h1 {
     font-size: 3.5em !important;
     font-weight: 900 !important;
-    color: #00ffff !important;
+    color: #00ffff !important; /* keep cyan-blue for theme consistency */
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    text-shadow: 0 0 15px rgba(0,255,255,0.5) !important;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.5) !important;
     margin: 0 !important;
+    font-family: 'Montserrat', sans-serif !important; /* modern font */
 }
+
 
 header nav {
     margin-top: 15px !important;
