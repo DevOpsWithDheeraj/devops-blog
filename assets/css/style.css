@@ -68,13 +68,14 @@ header {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    height: 400px !important; /* adjust as per banner height */
+    height: 400px !important; /* adjust as per banner */
     display: flex !important;
-    align-items: center !important; /* vertical centering */
-    justify-content: center !important; /* horizontal centering */
+    align-items: flex-start !important; /* move content to top */
+    justify-content: center !important; /* horizontal center */
     text-align: center !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
     border-bottom: 2px solid #00ffff !important;
+    padding-top: 50px !important; /* adds space from top */
 }
 
 .header-content {
@@ -84,6 +85,7 @@ header {
     z-index: 2 !important;
     text-align: center !important;
 }
+
 
 header h1 {
     font-size: 3.5em !important;
