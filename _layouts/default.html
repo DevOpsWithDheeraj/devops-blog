@@ -6,18 +6,18 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <!-- Header content wrapper to position text above banner -->
-    <div class="header-content">
-      <h1>{{ site.title }}</h1>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a> |
-        <a href="{{ '/blog' | relative_url }}">Blog</a> |
-        <a href="{{ '/about' | relative_url }}">About</a> |
-        <a href="{{ '/contact' | relative_url }}">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <!-- Centered Header Content -->
+  <div class="header-content">
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a> |
+      <a href="{{ '/blog' | relative_url }}">Blog</a> |
+      <a href="{{ '/about' | relative_url }}">About</a> |
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>
   <main>
     {{ content }}
   </main>
