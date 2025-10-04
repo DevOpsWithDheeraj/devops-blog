@@ -36,6 +36,16 @@ It aims to <strong>shorten software development cycles</strong> while delivering
 ## 🔹 Main DevOps Tools
 
 <div class="post-card">
+<h3>💻 Git & GitHub – Version Control</h3>
+<p>Track code changes, collaborate, and integrate with CI/CD pipelines.</p>
+<ul>
+<li>Branching strategies for safe development</li>
+<li>Version history and backup</li>
+<li>Integrates with DevOps tools</li>
+</ul>
+</div>
+
+<div class="post-card">
 <h3>🐳 Docker – Containerization</h3>
 <p>Packages applications and dependencies into a single container for consistency across environments.</p>
 <ul>
@@ -102,16 +112,6 @@ It aims to <strong>shorten software development cycles</strong> while delivering
 <li>Search errors quickly</li>
 <li>Monitor trends and debug issues</li>
 <li>Visual dashboards for logs</li>
-</ul>
-</div>
-
-<div class="post-card">
-<h3>💻 Git & GitHub – Version Control</h3>
-<p>Track code changes, collaborate, and integrate with CI/CD pipelines.</p>
-<ul>
-<li>Branching strategies for safe development</li>
-<li>Version history and backup</li>
-<li>Integrates with DevOps tools</li>
 </ul>
 </div>
 
