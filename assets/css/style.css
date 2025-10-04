@@ -3,30 +3,103 @@
 
 @import "{{ site.theme }}";
 
+/* Body and Background */
 body {
-  background: linear-gradient(to right, #ffecd2, #fcb69f);
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 20px;
-  color: #222;
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-  color: #ff5733;
+/* Header */
+header.site-header {
+    background-color: #00796b;  /* teal header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-a {
-  color: #0078ff;
-  text-decoration: none;
+header.site-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffcc00;  /* yellow title for contrast */
 }
 
-a:hover {
-  color: #ff33a0;
+/* Navigation Links */
+header.site-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
 }
 
-header, footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
+header.site-header nav a:hover {
+    color: #ff4081;  /* pink hover effect */
 }
+
+/* Post Cards */
+.post {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Post Titles */
+.post h1, .post h2, .post h3 {
+    color: #00796b;
+}
+
+/* Links inside posts */
+.post a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer.site-footer {
+    background-color: #004d40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff80ab;
+}
+
+/* Optional: Add colorful blockquote style */
+blockquote {
+    border-left: 5px solid #00796b;
+    background-color: #e0f2f1;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-style: italic;
+}
+
