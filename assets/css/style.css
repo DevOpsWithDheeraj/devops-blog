@@ -31,9 +31,9 @@ body {
    4️⃣ Headings
 =============================== */
 h1, h2, h3, h4, h5, h6 {
-    color: #00ffff; /* cyan blue */
+    color: #00ffff !important; /* cyan blue */
     font-weight: 800;
-    text-shadow: 2px 2px 8px #000;
+    text-shadow: 2px 2px 8px #000 !important;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -47,39 +47,65 @@ h3 { font-size: 2.2em; margin-bottom: 0.5em; }
    5️⃣ Links
 =============================== */
 a {
-    color: #00ffff;
+    color: #00ffff !important;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 8px #ffcc00;
+    color: #ffcc00 !important;
+    text-shadow: 0 0 8px #ffcc00 !important;
 }
 
 
 /* ===============================
-   6️⃣ Header
+   6️⃣ Header with Banner
 =============================== */
 header {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important; /* Deep Cyan Steel */
-    padding: 25px 0 !important;
+    position: relative !important;
+    background-image: url("/assets/images/banner.jpg?v=3") !important; /* your banner */
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 120px 0 !important; /* height for banner */
     box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
     border-bottom: 2px solid #00ffff !important;
     color: #ffffff !important;
+    text-align: center !important;
 }
 
+/* Overlay for text visibility */
+header::before {
+    content: "";
+    position: absolute !important;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4) !important; /* dark overlay */
+    z-index: 0;
+}
 
+header h1, header nav {
+    position: relative !important;
+    z-index: 1 !important; /* text above overlay */
+    color: #00ffff !important;
+}
+
+/* Gradient glow text for title */
+header h1 {
+    background: linear-gradient(to right, #00ffff, #33ccff) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-size: 3.5em !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.6) !important;
+}
 
 header nav a {
-    margin: 0 20px;
-    font-size: 1.3em;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    margin: 0 20px !important;
+    font-size: 1.3em !important;
 }
 
 
@@ -87,12 +113,12 @@ header h1 {
    7️⃣ Footer
 =============================== */
 footer {
-    background: rgba(28, 28, 28, 0.95);
-    padding: 30px 0;
-    color: #aaa;
-    border-top: 2px solid #00ffff;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.6);
-    font-size: 1em;
+    background: rgba(28, 28, 28, 0.95) !important;
+    padding: 30px 0 !important;
+    color: #aaa !important;
+    border-top: 2px solid #00ffff !important;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.6) !important;
+    font-size: 1em !important;
 }
 
 
@@ -100,23 +126,23 @@ footer {
    8️⃣ Post Cards
 =============================== */
 .post-card {
-    display: inline-block;
-    text-align: center;
-    width: 90%;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.05);
-    border-left: 6px solid #00ffff;
-    border-radius: 20px;
-    padding: 35px;
-    margin: 30px auto;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
+    display: inline-block !important;
+    text-align: center !important;
+    width: 90% !important;
+    max-width: 900px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-left: 6px solid #00ffff !important;
+    border-radius: 20px !important;
+    padding: 35px !important;
+    margin: 30px auto !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5) !important;
+    transition: all 0.3s ease !important;
 }
 
 .post-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 60px rgba(0,0,0,0.7);
-    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.7) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
 }
 
 
@@ -124,23 +150,23 @@ footer {
    9️⃣ Post Text
 =============================== */
 .post-card h3 {
-    font-size: 2em;
-    color: #00ffff;
-    margin-bottom: 15px;
+    font-size: 2em !important;
+    color: #00ffff !important;
+    margin-bottom: 15px !important;
 }
 
 .post-card p, 
 .post-card ul {
-    font-size: 1.2em;
-    color: #e0e0e0;
-    text-align: center;
-    list-style-position: inside;
+    font-size: 1.2em !important;
+    color: #e0e0e0 !important;
+    text-align: center !important;
+    list-style-position: inside !important;
 }
 
 .post-card .post-date {
-    color: #b0b0b0;
-    font-size: 0.9em;
-    margin-bottom: 15px;
+    color: #b0b0b0 !important;
+    font-size: 0.9em !important;
+    margin-bottom: 15px !important;
 }
 
 
@@ -148,27 +174,27 @@ footer {
    🔟 Images
 =============================== */
 img {
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    max-width: 100% !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
 }
 
 
 /* ===============================
-   ✅ Buttons (optional)
+   ✅ Buttons
 =============================== */
 button, .btn {
-    background-color: #00ffff;
-    color: #000;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 8px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
+    background-color: #00ffff !important;
+    color: #000 !important;
+    border: none !important;
+    padding: 10px 25px !important;
+    border-radius: 8px !important;
+    font-size: 1em !important;
+    cursor: pointer !important;
+    transition: background 0.3s, color 0.3s !important;
 }
 
 button:hover, .btn:hover {
-    background-color: #ffcc00;
-    color: #000;
+    background-color: #ffcc00 !important;
+    color: #000 !important;
 }
