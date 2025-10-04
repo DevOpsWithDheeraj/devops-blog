@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 
+<!-- Centered Banner Image -->
+<div style="text-align:center; margin-bottom: 30px;">
+  <img src="{{ '/assets/images/banner.jpg' | relative_url }}" alt="DevOps Banner" style="max-width:90%; border-radius:15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+</div>
+
 # 🌟 Welcome to My DevOps Blog
 
 Hi, I’m **Dheeraj Singh**, a DevOps Engineer passionate about **CI/CD, Cloud, and Automation**.  
@@ -124,7 +129,3 @@ It aims to <strong>shorten software development cycles</strong> while delivering
 </div>
 
 💡 **Pro Tip:** DevOps is not just tools – it’s a mindset combining **automation, monitoring, collaboration, and cloud practices**.
-
-
-
-
