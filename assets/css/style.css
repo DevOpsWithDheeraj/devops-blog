@@ -6,22 +6,26 @@
 /* ===============================
    General Body Styling
 =============================== */
-body {
-    background: linear-gradient(to bottom, #2c003e, #4b0082, #6a0dad);
+html, body {
+    background: linear-gradient(to bottom, #2c003e, #4b0082, #6a0dad) !important;
+    color: #ffffff !important;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px; /* reduced from 54px */
-    line-height: 1.5; /* adjusted */
-    color: #ffffff;
+    font-size: 18px; 
+    line-height: 1.5; 
     margin: 0;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+}
+
+.site-wrapper {
+    background: transparent !important;
 }
 
 /* ===============================
    Headings
 =============================== */
 h1, h2, h3, h4, h5, h6 {
-    color: #00ffff; /* Cyan headers */
+    color: #00ffff; 
     font-weight: 900;
     text-align: center;
     line-height: 1.2;
@@ -29,15 +33,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3.5em; /* reduced from 10.5em */
+    font-size: 3.5em;
 }
 
 h2 {
-    font-size: 3em; /* reduced from 9em */
+    font-size: 3em;
 }
 
 h3 {
-    font-size: 2.2em; /* reduced from 6.6em */
+    font-size: 2.2em;
 }
 
 /* ===============================
@@ -61,35 +65,35 @@ header, footer {
     background-color: #000000cc;
     color: #00ffff;
     text-align: center;
-    padding: 20px 0; /* reduced from 50px */
-    box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+    padding: 20px 0; 
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
 header nav a {
     margin: 0 15px;
-    font-size: 20px; /* reduced from 60px */
+    font-size: 20px; 
 }
 
 /* ===============================
    Blog Posts / DevOps Cards
 =============================== */
 .post-card {
-    display: inline-block;
-    text-align: center;
-    width: 90%;
-    max-width: 1200px;
+    display: inline-block; 
+    text-align: center;    
+    width: 90%;            
+    max-width: 1200px;     
     background: rgba(255, 255, 255, 0.1);
-    border-left: 10px solid #00ffff;
-    border-radius: 25px;
-    padding: 20px; /* reduced from 60px */
-    margin: 20px auto; /* reduced from 40px */
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    border-left: 6px solid #00ffff; 
+    border-radius: 15px;   
+    padding: 20px;          
+    margin: 20px auto;      
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .post-card:hover {
-    transform: translateY(-5px); /* reduced movement */
-    box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -97,14 +101,13 @@ header nav a {
    Post Titles and Meta
 =============================== */
 .post-card h3 {
-    font-size: 2.4em; /* reduced from 7.2em */
+    font-size: 2.4em; 
     margin-bottom: 10px;
     color: #00ffff;
-    text-align: center;
 }
 
 .post-card p, .post-card ul {
-    font-size: 1.25em; /* reduced from 3.75em */
+    font-size: 1.25em; 
     color: #e0e0e0;
     text-align: center; 
     list-style-position: inside;
@@ -112,9 +115,8 @@ header nav a {
 
 .post-card .post-date {
     color: #b0b0b0;
-    font-size: 1.1em; /* reduced from 3.3em */
+    font-size: 1.1em; 
     margin-bottom: 10px;
-    text-align: center;
 }
 
 /* ===============================
@@ -122,6 +124,6 @@ header nav a {
 =============================== */
 img {
     max-width: 100%;
-    border-radius: 15px; /* slightly smaller radius */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* reduced shadow */
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
