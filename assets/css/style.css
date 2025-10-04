@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+h1, h2, h3 {
+  color: #ff5733;
+}
+
+a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff33a0;
+}
+
+header, footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
