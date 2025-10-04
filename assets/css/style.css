@@ -7,15 +7,16 @@
    General Body Styling
 =============================== */
 body {
-    background: linear-gradient(to right, #87CEFA, #000000); /* Light Skyblue to Black */
+    background: linear-gradient(to bottom, #0b3d0b, #145214, #0a2d0a); /* Dark forest greens */
     font-family: 'Poppins', sans-serif;
-    font-size: 54px; /* Triple size (~18px × 3) */
-    line-height: 3;  /* More spacing for readability */
+    font-size: 54px; 
+    line-height: 3;
     color: #ffffff;
     margin: 0;
     padding: 30px;
-    text-align: center; /* Center all content */
+    text-align: center;
 }
+
 
 /* ===============================
    Headings
