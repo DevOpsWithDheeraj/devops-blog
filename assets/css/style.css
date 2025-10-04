@@ -64,43 +64,31 @@ a:hover {
 =============================== */
 header {
     position: relative !important;
-    background-image: url("/assets/images/banner.jpg?v=3") !important; /* banner image */
+    background-image: url("/assets/images/banner.jpg?v=3") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    padding: 200px 0 50px 0 !important; /* increase top padding for h1, reduce bottom */
+    padding: 200px 0 50px 0 !important; /* space for header text */
     box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
     border-bottom: 2px solid #00ffff !important;
     color: #ffffff !important;
     text-align: center !important;
 }
 
-
-/* Overlay for readability */
-header::before {
-    content: "";
-    position: absolute !important;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4) !important;
-    z-index: 0;
-}
-
-/* Title & nav above overlay */
-header h1, header nav {
+.header-content {
     position: relative !important;
-    z-index: 1 !important;
-    color: #00ffff !important;
+    z-index: 2 !important;
+    display: inline-block !important;
+    background: rgba(0, 255, 255, 0.15) !important; /* cyan tint */
+    padding: 15px 30px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
 }
 
-/* Theme-friendly banner title background */
 header h1 {
-    display: inline-block !important;
-    padding: 10px 25px !important;
-    background: linear-gradient(to right, rgba(0,255,255,0.15), rgba(51,204,255,0.15)) !important; /* cyan-blue tint */
-    border-radius: 10px !important;
-    font-weight: 900 !important;
     font-size: 3.5em !important;
+    font-weight: 900 !important;
+    color: #00ffff !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
     text-shadow: 0 0 15px rgba(0,255,255,0.5) !important;
@@ -109,6 +97,13 @@ header h1 {
 header nav a {
     margin: 0 20px !important;
     font-size: 1.3em !important;
+    color: #00ffff !important;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 8px #ffcc00 !important;
 }
 
 
