@@ -7,7 +7,7 @@ title: Home
 
 Hi, I’m **Dheeraj Singh**, a DevOps Engineer passionate about CI/CD, Cloud, and Automation.
 
-This blog covers everything from:
+This blog covers:
 - 🐳 Docker
 - ☸️ Kubernetes
 - ☁️ AWS
@@ -16,17 +16,16 @@ This blog covers everything from:
 
 ![DevOps Banner](assets/images/banner.jpg)
 
-> 💬 “Automate everything that can be automated!”
-
 ---
 
-## 🆕 Latest Posts
+## 🆕 All Blog Posts
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts %}
 ### [{{ post.title }}]({{ post.url | relative_url }})
-📅 {{ post.date | date: "%b %d, %Y" }}
-{{ post.excerpt }}
----
+📅 {{ post.date | date: "%B %d, %Y" }}
 
+{{ post.excerpt }}
+
+---
 {% endfor %}
 
