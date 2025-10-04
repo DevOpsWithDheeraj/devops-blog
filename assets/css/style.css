@@ -7,22 +7,24 @@
    General Body Styling
 =============================== */
 body {
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background: linear-gradient(to right, #87CEFA, #000000); /* Light Skyblue to Black */
     font-family: 'Poppins', sans-serif;
-    font-size: 18px; /* Increased font size */
+    font-size: 25px; /* Increased font size */
     line-height: 1.8;
-    color: #222;
+    color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 /* ===============================
    Headings
 =============================== */
 h1, h2, h3, h4, h5, h6 {
-    color: #ff5733;
-    font-weight: 700;
+    color: #00ffff; /* Cyan headers for contrast */
+    font-weight: 800;
+    text-align: center; /* Center headers */
     line-height: 1.3;
+    text-shadow: 2px 2px 4px #000000; /* Shadow for depth */
 }
 
 h1 {
@@ -41,64 +43,71 @@ h3 {
    Links
 =============================== */
 a {
-    color: #0078ff;
+    color: #00ffff;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:hover {
-    color: #ff33a0;
+    color: #ffcc00; /* Bright hover effect */
+    text-decoration: underline;
 }
 
 /* ===============================
    Header & Footer
 =============================== */
 header, footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #000000cc; /* Semi-transparent black */
+    color: #00ffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 header nav a {
-    margin: 0 15px;
-    font-size: 18px; /* increased nav font */
+    margin: 0 20px;
+    font-size: 18px; /* Increased nav font */
 }
 
 /* ===============================
    Blog Posts Cards
 =============================== */
 .post-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1); /* Transparent card */
+    border-left: 5px solid #00ffff; /* Highlight edge */
     border-radius: 15px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 25px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    transform: translateY(-7px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 /* ===============================
    Post Titles and Meta
 =============================== */
 .post-card h3 {
-    font-size: 1.8em;
-    margin-bottom: 5px;
-    color: #ff5733;
+    font-size: 1.9em;
+    margin-bottom: 8px;
+    color: #00ffff;
+    text-align: center;
 }
 
 .post-card p {
-    font-size: 1.1em; /* increase paragraph font */
+    font-size: 1.15em; /* Increase paragraph font */
+    color: #e0e0e0;
 }
 
 .post-card .post-date {
-    color: #555;
-    font-size: 0.95em;
-    margin-bottom: 10px;
+    color: #b0b0b0;
+    font-size: 1em;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 /* ===============================
@@ -106,5 +115,6 @@ header nav a {
 =============================== */
 img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
