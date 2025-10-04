@@ -63,11 +63,13 @@ a:hover {
    6️⃣ Header
 =============================== */
 header {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Deep Cyan Steel */
-    padding: 25px 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-    border-bottom: 2px solid #00ffff;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364) !important; /* Deep Cyan Steel */
+    padding: 25px 0 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
+    border-bottom: 2px solid #00ffff !important;
+    color: #ffffff !important;
 }
+
 
 
 header nav a {
