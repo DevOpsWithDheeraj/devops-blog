@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 body {
   background: linear-gradient(to right, #ffecd2, #fcb69f);
   font-family: 'Poppins', sans-serif;
