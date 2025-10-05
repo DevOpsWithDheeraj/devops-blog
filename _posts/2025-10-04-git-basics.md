@@ -35,17 +35,22 @@ git --version
 ```
 
 ## 3. Git Configuration
-# Set your name
-`git config --global user.name "Dheeraj Singh"`
+```
+git config --global user.name "Dheeraj Singh"
+git config --global user.email "sdheerajsingh2498@gmail.com"
+git config --global color.ui auto
+git config --list
+```
 
-# Set your email
-`git config --global user.email "sdheerajsingh2498@gmail.com"`
+## 4. Basic Git Workflow
+ # Initialize Repository
+ `git init`       
+ # Clone Repository
+ `git clone https://github.com/DevOpsWithDheeraj/myproject.git`
+ # Check Status
+ `git status     # Check modified, staged, and untracked files`
 
-# Enable colored output for better readability
-`git config --global color.ui auto`
 
-# Verify your configuration
-`git config --list`
 
 
 
