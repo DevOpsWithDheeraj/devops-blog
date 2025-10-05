@@ -44,11 +44,13 @@ git config --list
 
 ## 4. Basic Git Workflow
  # Initialize Repository
- `git init`       
+ ```
+ git init
+ ```     
  # Clone Repository
  `git clone https://github.com/DevOpsWithDheeraj/myproject.git`
  # Check Status
- `git status     # Check modified, staged, and untracked files`
+ `git status`   
 
 
 
