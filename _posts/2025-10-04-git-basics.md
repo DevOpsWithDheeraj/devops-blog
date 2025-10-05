@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git Basics for DevOps"
+title: "Git Basics"
 date: 2025-10-04
 ---
 
