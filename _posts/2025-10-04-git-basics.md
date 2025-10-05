@@ -43,7 +43,7 @@ git config --list
 ```
 
 ## 4. Basic Git Workflow
- # Initialize Repository
+ ### Initialize Repository
  ```
  git init
  ```     
