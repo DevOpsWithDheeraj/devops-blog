@@ -83,6 +83,20 @@ WORKDIR /app
 CMD ["python3", "app.py"]
 ```
 
+## 6. Docker Networking
+Bridge (default): Isolated network; containers can communicate.
+Host: Shares host network.
+Overlay: Used in Docker Swarm for multi-host networking.
+### Inspect network:
+```bash
+docker network ls
+docker network inspect bridge
+```
+### Connect container to network:
+```bash
+docker network connect <network_name> <container_id>
+```
+
 
 
 
