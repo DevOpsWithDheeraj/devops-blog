@@ -33,9 +33,8 @@ sudo apt update
 sudo apt install git -y
 git --version
 ```
-
 ## 3. Git Configuration
-```
+```bash
 git config --global user.name "Dheeraj Singh"
 git config --global user.email "sdheerajsingh2498@gmail.com"
 git config --global color.ui auto
@@ -43,48 +42,22 @@ git config --list
 ```
 
 ## 4. Basic Git Workflow
-### Initialize Repository
-```
-git init
-```     
-### Clone Repository
-```
-git clone https://github.com/DevOpsWithDheeraj/myproject.git
-```
-### Check Status
-```
-git status
-```
-### Stage and Commit Changes
-```
+```bash
+git init    # Initialize Repository
+git clone https://github.com/DevOpsWithDheeraj/myproject.git   # Clone Repository
+git status  # Check Status
 git add filename.txt       # Stage a file
 git add .                  # Stage all files
 git commit -m "Add initial project structure"
-```
-### Push and Pull
-```
 git push origin main       # Push commits to remote
 git pull origin main       # Fetch and merge remote changes
-```
-## 5. Branching & Merging
-### Create & Switch Branch
-```
-git checkout -b feature-login
-```
-### Switch to Existing Branch
-```
-git checkout main
-```
-### Merge Branch
-```
-git merge feature-login
-```
-### Delete Branch
-```
-git branch -d feature-login
+git checkout -b feature-login   # Create & Switch Branch
+git checkout main  # Switch to Existing Branch
+git merge feature-login  # Merge Branch
+git branch -d feature-login  # Delete Branch
 ```
 ## 6. Working with Remotes
-```
+```bash
 git remote add origin <repo-url>   # Add remote repository
 git remote -v                       # View remote repos
 git fetch origin                     # Fetch remote changes without merging
@@ -92,7 +65,7 @@ git pull origin main                 # Pull and merge changes
 git push origin feature-login        # Push branch to remote
 ```
 ## 7. Inspecting History & Changes
-```
+```bash
 git log                               # View full commit history
 git log --oneline                     # Compact view
 git log --graph --all --decorate      # Visual graph
@@ -101,7 +74,7 @@ git diff --staged                      # Show staged changes
 git show <commit_id>                   # Show details of a specific commit
 ```
 ## 8. Undo & Reset
-```
+```bash
 git restore filename.txt               # Discard unstaged changes
 git restore --staged filename.txt     # Unstage staged file
 git revert <commit_id>                # Revert specific commit
@@ -109,14 +82,14 @@ git reset --soft <commit_id>          # Move HEAD, keep staged changes
 git reset --hard <commit_id>          # Move HEAD, discard changes
 ```
 ## 9. Stashing
-```
+```bash
 git stash                             # Temporarily save changes
 git stash list                        # List stashed changes
 git stash pop                         # Apply and remove stash
 git stash apply <stash_id>            # Apply stash without removing
 ```
 ## 10. Tags & Releases
-```
+```bash
 git tag                               # List tags
 git tag v1.0                           # Lightweight tag
 git tag -a v1.0 -m "Release version 1.0"  # Annotated tag
@@ -135,27 +108,14 @@ git push origin --tags                 # Push all tags
 This ensures safe collaboration, isolated development, and automation.
 
 ## 12. Advanced Commands & Tips
-```
-# Rename branch
-git branch -m old-name new-name
-
-# Show remote branch info
-git branch -r
-
-# Cherry-pick a commit
-git cherry-pick <commit_id>
-
-# Rebase current branch onto another
-git rebase main
-
-# Squash commits during rebase
-git rebase -i HEAD~3
-
-# Check differences between branches
-git diff main feature-login
-
-# Delete remote branch
-git push origin --delete feature-login
+```bash
+git branch -m old-name new-name    # Rename branch
+git branch -r    # Show remote branch info
+git cherry-pick <commit_id>   # Cherry-pick a commit
+git rebase main   # Rebase current branch onto another
+git rebase -i HEAD~3  # Squash commits during rebase
+git diff main feature-login  # Check differences between branches
+git push origin --delete feature-login  # Delete remote branch
 ```
 
 ## 13. All Useful Git Commands Cheat Sheet
