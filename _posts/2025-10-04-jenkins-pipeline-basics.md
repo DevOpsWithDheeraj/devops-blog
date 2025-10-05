@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenkins Pipeline Basics – Automate Your CI/CD"
+title: "Jenkins Pipeline Basics"
 date: 2025-10-05
 ---
 
