@@ -35,12 +35,20 @@ git --version
 ```
 
 ## 3. Git Configuration
-```bash
-git config --global user.name "Dheeraj Singh"
-git config --global user.email "sdheerajsingh2498@gmail.com"
-git config --global color.ui auto
-git config --list
-```
+# Set your name
+`git config --global user.name "Dheeraj Singh"`
+
+# Set your email
+`git config --global user.email "sdheerajsingh2498@gmail.com"`
+
+# Enable colored output for better readability
+`git config --global color.ui auto`
+
+# Verify your configuration
+`git config --list`
+
+
+
 
 
 
