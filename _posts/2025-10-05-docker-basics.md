@@ -119,7 +119,7 @@ services:
       - ./app:/app
 ```
 
-### Commands:
+### commands:
 ```
 docker-compose up
 docker-compose down
