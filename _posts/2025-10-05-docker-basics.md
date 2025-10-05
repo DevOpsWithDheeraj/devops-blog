@@ -96,7 +96,88 @@ docker network inspect bridge
 ```bash
 docker network connect <network_name> <container_id>
 ```
+## 7. Docker Volumes
+Volumes persist data beyond container lifecycle.
+```bash
+docker volume create myvol   #Create volume:
+docker run -v myvol:/data ubuntu   # Mount volume in container
+docker volume ls   # List volumes
+```
+## 8. Docker Compose
+Docker Compose allows multi-container applications with a single YAML file.
+### docker-compose.yml example:
+```yaml
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+  app:
+    image: my-python-app
+    volumes:
+      - ./app:/app
+```
+### Commands:
+```
+docker-compose up
+docker-compose down
+docker-compose logs
+```
 
+## 9. Docker Registry
+### Push image to Docker Hub:
+```
+docker login
+docker tag my-python-app username/my-python-app:latest
+docker push username/my-python-app:latest
+```
+### Pull image from Docker Hub:
+```
+docker pull username/my-python-app:latest
+```
+
+## 10. Advanced Docker Concepts
+### 10.1 Multi-Stage Builds
+Optimizes image size by separating build and runtime environments.
+```dockerfile
+# Stage 1: build
+FROM golang:1.20 as builder
+WORKDIR /app
+COPY . .
+RUN go build -o app
+
+# Stage 2: runtime
+FROM alpine:latest
+COPY --from=builder /app/app /app/app
+CMD ["/app/app"]
+```
+### 10.2 Docker Swarm
+1. Native Docker orchestration tool
+2. Manage multi-container apps across multiple nodes
+```
+docker swarm init
+docker service create --name myservice -p 80:80 nginx
+docker service ls
+```
+### 10.3 Docker Security
+1. Use minimal base images (Alpine)
+2. Scan images for vulnerabilities
+3. Run containers with non-root user
+
+### 10.4 Docker Logging
+```
+docker logs <container_id>   # View logs
+docker logs -f <container_id>   # Stream logs
+```
+
+## 11. Docker Best Practices
+1. Use .dockerignore to reduce image size.
+2. Keep images small (Alpine base images).
+3. Tag images properly (versioning).
+4. Separate configuration from code (environment variables, volumes).
+
+This covers Docker from basics to advanced, including installation, commands, Dockerfile, volumes, networking, compose, registry, and orchestration.
 
 
 
