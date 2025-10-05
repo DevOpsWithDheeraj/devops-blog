@@ -4,6 +4,8 @@ title: "Git Basics for DevOps"
 date: 2025-10-04
 ---
 
+## What is Git?
+
 Git is the **most widely used version control system** and an essential tool for **DevOps engineers**. It allows you to **track changes, collaborate with teams, and manage project history** efficiently. 
 
 Understanding Git is fundamental for **CI/CD pipelines, automated deployments, and infrastructure-as-code projects**.
