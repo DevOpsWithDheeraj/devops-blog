@@ -60,6 +60,28 @@ docker stop <container_id>  # Stop a container
 docker rm <container_id>   # Remove a container
 docker start -ai <container_id>   # Start a container again
 ```
+## 5. Dockerfile Basics
+A Dockerfile is a text file containing instructions to build a Docker image.
+### Example:
+```dockerfile
+# Base image
+FROM ubuntu:latest
+
+# Maintainer info
+LABEL maintainer="dheeraj@example.com"
+
+# Install packages
+RUN apt-get update && apt-get install -y python3 python3-pip
+
+# Copy app files
+COPY app.py /app/app.py
+
+# Set working directory
+WORKDIR /app
+
+# Run the app
+CMD ["python3", "app.py"]
+```
 
 
 
