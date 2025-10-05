@@ -38,6 +38,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER   # Run docker without sudo
 ```
+
 ### Check installation:
 ```bash
 docker --version
@@ -51,6 +52,7 @@ docker images   # List images
 docker pull ubuntu:latest   # pull image
 docker rmi ubuntu:latest    # remove image
 ```
+
 ### 4.2 Containers
 ```bash
 docker run -it ubuntu:latest /bin/bash    # run container
@@ -87,11 +89,13 @@ CMD ["python3", "app.py"]
 1. Bridge (default): Isolated network; containers can communicate.
 2. Host: Shares host network.
 3. Overlay: Used in Docker Swarm for multi-host networking.
+
 ### Inspect network:
 ```bash
 docker network ls
 docker network inspect bridge
 ```
+
 ### Connect container to network:
 ```bash
 docker network connect <network_name> <container_id>
@@ -135,6 +139,7 @@ docker login
 docker tag my-python-app username/my-python-app:latest
 docker push username/my-python-app:latest
 ```
+
 ### Pull image from Docker Hub:
 ```
 docker pull username/my-python-app:latest
@@ -155,6 +160,7 @@ FROM alpine:latest
 COPY --from=builder /app/app /app/app
 CMD ["/app/app"]
 ```
+
 ### 10.2 Docker Swarm
 1. Native Docker orchestration tool
 2. Manage multi-container apps across multiple nodes
@@ -163,6 +169,7 @@ docker swarm init
 docker service create --name myservice -p 80:80 nginx
 docker service ls
 ```
+
 ### 10.3 Docker Security
 1. Use minimal base images (Alpine)
 2. Scan images for vulnerabilities
