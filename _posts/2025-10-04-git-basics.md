@@ -50,7 +50,7 @@ git clone https://github.com/DevOpsWithDheeraj/myproject.git   # Clone Repositor
 git status  # Check Status
 git add filename.txt       # Stage a file
 git add .                  # Stage all files
-git commit -m "Add initial project structure"
+git commit -m "Added the files"
 git push origin main       # Push commits to remote
 git pull origin main       # Fetch and merge remote changes
 git checkout -b feature-login   # Create & Switch Branch
