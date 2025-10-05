@@ -96,6 +96,7 @@ docker network inspect bridge
 ```bash
 docker network connect <network_name> <container_id>
 ```
+
 ## 7. Docker Volumes
 Volumes persist data beyond container lifecycle.
 ```bash
@@ -103,6 +104,7 @@ docker volume create myvol   #Create volume:
 docker run -v myvol:/data ubuntu   # Mount volume in container
 docker volume ls   # List volumes
 ```
+
 ## 8. Docker Compose
 Docker Compose allows multi-container applications with a single YAML file.
 ### docker-compose.yml example:
