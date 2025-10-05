@@ -84,9 +84,9 @@ CMD ["python3", "app.py"]
 ```
 
 ## 6. Docker Networking
-Bridge (default): Isolated network; containers can communicate.
-Host: Shares host network.
-Overlay: Used in Docker Swarm for multi-host networking.
+1. Bridge (default): Isolated network; containers can communicate.
+2. Host: Shares host network.
+3. Overlay: Used in Docker Swarm for multi-host networking.
 ### Inspect network:
 ```bash
 docker network ls
