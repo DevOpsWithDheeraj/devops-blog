@@ -32,6 +32,7 @@ Git is **distributed**, so every developer has a full repository locally, enabli
 sudo apt update
 sudo apt install git -y
 git --version
+```
 
 ## 3. Git Configuration
 ```bash
@@ -39,6 +40,8 @@ git config --global user.name "Dheeraj Singh"
 git config --global user.email "sdheerajsingh2498@gmail.com"
 git config --global color.ui auto
 git config --list
+```
+
 
 
 
