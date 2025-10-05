@@ -59,6 +59,8 @@ docker ps -a   # List all containers
 docker stop <container_id>  # Stop a container
 docker rm <container_id>   # Remove a container
 docker start -ai <container_id>   # Start a container again
+```
+
 
 
 
