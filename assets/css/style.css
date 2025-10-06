@@ -2,8 +2,8 @@
    1️⃣ Import the Cayman Theme
 =============================== */
 @import "{{ site.theme }}";
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&display=swap'); 
+/*@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap'); */
 
 
 /* ===============================
@@ -96,16 +96,16 @@ header {
 
 /* Header Title */
 header h1 {
-    font-size: 3.5em !important;
-    font-weight: 900 !important;
+    font-size: 5em !important;
+    font-weight: 950 !important;
     color: #00ffff !important; /* keep cyan-blue for theme consistency */
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
     text-shadow: 0 0 12px rgba(0, 255, 255, 0.5) !important;
     margin: 0 !important;
     /*font-family: 'Montserrat', sans-serif !important; /* modern font */
-    /*font-family: 'Roboto Slab', serif !important; */
-    font-family: 'Orbitron', sans-serif !important;
+    font-family: 'Roboto Slab', serif !important; 
+    /*font-family: 'Orbitron', sans-serif !important; */
 }
 
 
