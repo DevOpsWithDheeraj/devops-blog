@@ -75,6 +75,11 @@ header {
     text-align: center !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
     border-bottom: 2px solid #00ffff !important;
+
+   /* ✅ New additions for curved bottom */
+    border-bottom-left-radius: 100px !important;
+    border-bottom-right-radius: 100px !important;
+    overflow: hidden !important; /* ensures clean curved edges */
 }
 
 /* Header text container with theme-friendly background */
