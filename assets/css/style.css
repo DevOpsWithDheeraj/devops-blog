@@ -2,7 +2,7 @@
    1️⃣ Import the Cayman Theme
 =============================== */
 @import "{{ site.theme }}";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&display=swap');
 
 /* ===============================
    2️⃣ Graphite Charcoal Background
