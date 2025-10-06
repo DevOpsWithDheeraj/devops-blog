@@ -77,8 +77,10 @@ header {
     border-bottom: 2px solid #00ffff !important;
 
    /* ✅ New additions for curved bottom */
-    border-bottom-left-radius: 100px !important;
-    border-bottom-right-radius: 100px !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
     overflow: hidden !important; /* ensures clean curved edges */
 }
 
