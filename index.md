@@ -58,22 +58,22 @@ It aims to <strong>shorten software development cycles</strong> while delivering
 </div>
 
 <div class="post-card">
-<h3>☸️ Kubernetes – Container Orchestration</h3>
-<p>Manages multiple Docker containers across servers efficiently.</p>
-<ul>
-<li>Automatic deployment & scaling</li>
-<li>Load balancing and self-healing containers</li>
-<li>Rolling updates without downtime</li>
-</ul>
-</div>
-
-<div class="post-card">
 <h3>⚙️ Jenkins – CI/CD Automation</h3>
 <p>Automates building, testing, and deploying code with pipelines.</p>
 <ul>
 <li>Pipelines as code (Jenkinsfile)</li>
 <li>Integrates with Git, Docker, Maven, etc.</li>
 <li>Extensive plugin ecosystem</li>
+</ul>
+</div>
+
+<div class="post-card">
+<h3>☸️ Kubernetes – Container Orchestration</h3>
+<p>Manages multiple Docker containers across servers efficiently.</p>
+<ul>
+<li>Automatic deployment & scaling</li>
+<li>Load balancing and self-healing containers</li>
+<li>Rolling updates without downtime</li>
 </ul>
 </div>
 
