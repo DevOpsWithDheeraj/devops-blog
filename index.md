@@ -4,7 +4,7 @@ title: Home
 ---
 
 <!-- Centered Banner Image -->
-<div style="text-align:center; margin-bottom: 30px;">
+<div style="text-align:center; margin-bottom: 28px;">
   <img src="{{ '/assets/images/banner.jpg' | relative_url }}" alt="DevOps Banner" style="max-width:90%; border-radius:15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
 </div>
 
