@@ -101,7 +101,8 @@ header h1 {
     color: #00ffff !important; /* keep cyan-blue for theme consistency */
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    text-shadow: 0 0 12px rgba(0, 255, 255, 0.5) !important;
+    /*text-shadow: 0 0 12px rgba(0, 255, 255, 0.5) !important; */
+    text-shadow: 2px 2px 8px #000 !important;
     margin: 0 !important;
     font-family: 'Montserrat', sans-serif !important; /* modern font 
     /*font-family: 'Roboto Slab', serif !important; */
