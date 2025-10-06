@@ -99,7 +99,7 @@ header h1 {
     font-size: 4.5em !important;
     font-weight: 800 !important;
     color: #00ffff !important; /* keep cyan-blue for theme consistency */
-    text-transform: none !important;
+    text-transform: uppercase !important;
     letter-spacing: 2px !important;
     /*text-shadow: 0 0 12px rgba(0, 255, 255, 0.5) !important; */
     text-shadow: 2px 2px 8px #000 !important;
