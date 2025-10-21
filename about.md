@@ -14,7 +14,7 @@ I strongly believe in the DevOps philosophy — **collaboration, automation, and
 
 ### 🚀 My DevOps Journey
 
-I started my career as a **System Engineer** managing large-scale production systems where stability, uptime, and quick issue resolution were critical.  
+I started my career as a **Software Engineer** managing large-scale production systems where stability, uptime, and quick issue resolution were critical.  
 Working closely with release and development teams exposed me to the importance of **CI/CD pipelines**, **infrastructure automation**, and **cloud-native technologies** — which sparked my shift toward DevOps.
 
 Since then, I’ve been constantly building, experimenting, and learning how to automate end-to-end workflows — from **code commit to deployment and monitoring**.  
